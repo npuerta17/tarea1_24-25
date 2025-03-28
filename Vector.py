@@ -1,9 +1,10 @@
 import math
 class Punto():
+#None no funciona
     def __init__(self, x, y):
         self.x = x
         self.y = y
-        if x is None or y is None:
+        if x is None and y is None:
             x = 0
             y = 0
     
@@ -19,6 +20,8 @@ class Punto():
             return 'Cuadrante 3'
         elif self.x > 0 and self.y < 0:
             return 'Cuadrante 4'
+        elif self.x == 0 and self.y == 0:
+            return 'Origen'
     
     def vector(self,punto):
         return (punto.x - self.x, punto.y - self.y)
