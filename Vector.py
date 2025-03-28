@@ -1,12 +1,10 @@
 import math
 class Punto():
 #None no funciona
-    def __init__(self, x, y):
+    def __init__(self, x=0, y=0):
         self.x = x
         self.y = y
-        if x is None and y is None:
-            x = 0
-            y = 0
+       
     
     def __str__(self):
         return f'({self.x}, {self.y})'

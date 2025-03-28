@@ -9,7 +9,7 @@ import math
 A=Punto(2,3)
 B=Punto(5,5)
 C=Punto(-3,-1)
-D=Punto(0,0)
+D=Punto()
 print(f"{A}\n{B}\n{C}\n{D}\n")
 
 
