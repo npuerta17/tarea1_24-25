@@ -10,14 +10,14 @@ A=Punto(2,3)
 B=Punto(5,5)
 C=Punto(-3,-1)
 D=Punto()
-print(f"{A}\n{B}\n{C}\n{D}\n")
+print(f"A({A})\nB({B})\nC({C})\nD({D})\n")
 
 
 #2
-print(f"{A.cuadrante()} {C.cuadrante()} {D.cuadrante()}")
+print(f"A: {A.cuadrante()} C: {C.cuadrante()} D: {D.cuadrante()}")
 
 #3
-print(f"{A.vector(B)} {B.vector(A)}")
+print(f"AB: {A.vector(B)} BA: {B.vector(A)}")
 
 #4
 print(f"{A.distancia(B)} {B.distancia(A)}")
@@ -26,8 +26,14 @@ print(f"{A.distancia(B)} {B.distancia(A)}")
 distanciaDorigenA = A.distancia(Punto(0,0))
 distanciaDorigenB = B.distancia(Punto(0,0))
 distanciaDorigenC = C.distancia(Punto(0,0))
+max=max(distanciaDorigenA,distanciaDorigenB,distanciaDorigenC)
+if max == distanciaDorigenA:
+    print(f"El mas lejos de el origen es: {A}")
+elif max == distanciaDorigenB:
+    print(f"El mas lejos de el origen es: {B}")
+else:
+    print(f"El mas lejos de el origen es: {C}")
 
-print(f"El mas lejos de el origen es: {max(distanciaDorigenA,distanciaDorigenB,distanciaDorigenC)}")
 
 #6
 R=Rectangulo(A,B)

@@ -25,4 +25,4 @@ class Punto():
         return (punto.x - self.x, punto.y - self.y)
         
     def distancia(self,punto):
-        math.sqrt((self.x - punto.x)**2 + (self.y - punto.y)**2)
+        return math.sqrt((punto.x-self.x)**2 + (punto.y - self.y)**2)
